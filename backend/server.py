@@ -18,7 +18,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 @app.get('/')
-def check_status():
+def async check_status():
     return ["The server is Running"]
 
 @app.post('/predict_pcos')
